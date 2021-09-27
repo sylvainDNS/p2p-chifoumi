@@ -138,6 +138,10 @@ const globalStyle = css`
   #root {
     height: 100%;
   }
+
+  body {
+    font-family: Futura, sans-serif;
+  }
 `
 
 const styles = css`
@@ -148,3 +152,11 @@ const styles = css`
 const GlobalStyle = props => <Global styles={styles} {...props} />
 
 export default GlobalStyle
+
+export const COLORS = {
+  red1: '#d62828',
+  blue1: '#003049',
+  orange1: '#f77f00',
+  yellow1: '#fcbf49',
+  grey1: '#eae2b7',
+}
