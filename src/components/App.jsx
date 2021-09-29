@@ -1,11 +1,11 @@
 import styled from '@emotion/styled'
-import Board from './Board'
+import P2P from './P2P'
 
 const App = () => (
   <Wrapper>
     <Header>Tic-Tac-Toe</Header>
     <Main>
-      <Board />
+      <P2P />
     </Main>
     <Footer>Nathan & Sylvain - 2021</Footer>
   </Wrapper>
