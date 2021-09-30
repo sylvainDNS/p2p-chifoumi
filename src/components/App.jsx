@@ -1,11 +1,18 @@
 import styled from '@emotion/styled'
-import Board from './Board'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Game from './Game'
+import Home from './Home'
 
 const App = () => (
   <Wrapper>
     <Header>Chifoumi</Header>
     <Main>
-      <Board />
+      <Router>
+        <Switch>
+          <Route path="/game" component={Game} />
+          <Route component={Home} />
+        </Switch>
+      </Router>
     </Main>
     <Footer>Nathan & Sylvain - 2021</Footer>
   </Wrapper>
